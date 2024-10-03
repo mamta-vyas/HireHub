@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import Nav from "./components/Home/Nav";
+import ClientProvider from "./components/Hoc/clientProvider";
 
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
@@ -31,10 +32,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+   <ClientProvider>
+     <html lang="en">
       <body className={font.className}>
         <Nav/>
         {children}</body>
     </html>
+   </ClientProvider>
   );
 }
