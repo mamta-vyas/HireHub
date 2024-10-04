@@ -4,6 +4,8 @@ import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import Nav from "./components/Home/Nav";
 import ClientProvider from "./components/Hoc/clientProvider";
+import Footer from "./components/Home/Footer";
+import ScrollToTop from "./components/Helper/ScrollToTop";
 
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
@@ -36,7 +38,10 @@ export default function RootLayout({
      <html lang="en">
       <body className={font.className}>
         <Nav/>
-        {children}</body>
+        {children}
+        <Footer/>
+        <ScrollToTop/>
+        </body>
     </html>
    </ClientProvider>
   );
