@@ -2,7 +2,6 @@ import React from 'react'
 import HeroImg from "@/public/images/hero.svg"
 import Image from 'next/image'
 
-
 const Hero = () => {
   return (
     <div className='pt-[5rem] pb-[3rem] '>
