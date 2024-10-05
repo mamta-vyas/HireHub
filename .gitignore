@@ -7,7 +7,7 @@
 .yarn/install-state.gz
 
 # authentication
-/auth.js
+ auth.js
 # testing
 /coverage
 
