@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import ImageUrl from "@/public/images/chair.jpg"; 
+import ImageUrl from "@/public/images/chair.jpeg"; 
 
 import Image from "next/image";
 import { signIn } from "next-auth/react";

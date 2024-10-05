@@ -1,5 +1,5 @@
 import React from 'react'
-import LogoImage from "@/public/images/logo.jpg" 
+import LogoImage from "@/public/images/logo.jpeg" 
 import Link from 'next/link'
 import Image from 'next/image'
 import { getServerSession } from 'next-auth'
