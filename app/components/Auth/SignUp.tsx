@@ -1,7 +1,5 @@
 "use client";
 import React from "react";
-import ImageUrl from "@/public/images/chair.jpg"; 
-
 import Image from "next/image";
 import { signIn } from "next-auth/react";
 
@@ -9,7 +7,7 @@ const SignUp = () => {
   return (
     <div className="overflow-hidden h-[60vh] md:h-[90vh] flex flex-col items-center justify-center">
       {/* {Image } */}
-      <Image src={ImageUrl} alt="image" width={400} height={300}/>
+      <Image src="/images/chair.jpg" alt="image" width={400} height={300}/>
       {/* Sign Up button */}
       <button  onClick={() => {
           signIn('google', { 

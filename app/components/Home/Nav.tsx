@@ -1,7 +1,6 @@
 import React from 'react'
-import LogoImage from "@/public/images/logo.png" 
-import Link from 'next/link'
 import Image from 'next/image'
+import Link from 'next/link'
 import { getServerSession } from 'next-auth'
 import { authOptions } from '@/auth'
 import User from '../Helper/User'
@@ -16,7 +15,7 @@ const Nav = async() => {
      {/* {logo} */}
     <div className='w-[150px] h-[150px] md:w-[150px] md:h-[150px]'>
       <Link href="/">
-      <Image src={LogoImage} alt="logo-img" width={300} height={300} className='w-[100%] h-[100%]'/>
+      <Image src="/images/logo.png" alt="logo-img" width={300} height={300} className='w-[100%] h-[100%]'/>
       </Link>
     </div>
     <div className='flex items-center space-x-4'>
